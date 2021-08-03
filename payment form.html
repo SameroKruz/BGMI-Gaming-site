@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <div class="payment-container">
+        <h1 class="payment-heading">Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+        <label for="full name"> Full Name: </label>
+        <input type="text" id="full name" name="name" required placeholder="Enter Your Name"> <br><br>
+        <label for="bgmi id">BGMI ID: </label>
+        <input type="number" id="bgmi id" name="name" min="1000000000" max="9999999999" required
+            placeholder="Enter Your BGMI ID Number"><br><br>
+        <label for="username">BGMI Username: </label>
+        <input type="text" id="username" name="name" required placeholder="Enter Your Username"><br><br>
+        <label for="email">Email: </label><input type="email" required placeholder="Enter Your Email" id="email">
+
+        <label for="country">Country</label><select name="country" id="country">
+            <option value="">--Select Your Country--</option>
+            <option value="Afganistan">Afghanistan</option>
+            <option value="Denmark">Denmark</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="China">China</option>
+            <option value="United States of America">United States of America</option>
+        </select>
+        <fieldset>
+            <legend>Version</legend>
+            <label for="global">Global</label><input type="radio" id="global" name="version">
+            <label for="indian">Indian</label><input type="radio" id="indian" name="version">
+            <label for="korean" class="korean-radio">Korean</label><input type="radio" id="korean" name="version">
+        </fieldset>
+
+        <h2 class="info-heading">Payment Information</h2>
+        <hr> <br>
+        <label for="card type">Card Type: </label><select name="card type" id="card type">
+            <option value="">--Select Card Type--</option>
+            <option value="visa">VISA</option>
+            <option value="master card">Master Card</option>
+            <option value="rupay">Rupay</option>
+        </select>
+        <label for="card number">Card Number: </label><input type="number" id="card number" name="card number" required
+            placeholder="1111-2222-3333-4444">
+        <label for="expiry date">Expiration Date: </label><input type="date" id="expiry date">
+        <label for="cvv">CVV: </label><input type="number" id="cvv" min="100" max="999" placeholder="123" required>
+        <button class="paynow">Pay Now</button>
+
+    </div>
+
+
+</body>
+
+</html>
